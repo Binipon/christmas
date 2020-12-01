@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+* {
+   box-sizing: border-box; 
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding:0;
+    font-family: 'Sofia', cursive;
+}
+
+/* Top navigation */
+
+.navbar {
+ 
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .5em 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:radial-gradient(farthest-corner at 20vw 5vh,#edfcea 10%, #b7eaf8 100%);
+  z-index: 1;
+}
+  
+.navbar p {
+  font-size: 1.5em;
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+   color: green;
+} 
+
+a:hover,
+a:active
+  {
+   color: yellow;
+} 
+
+/* TOPの中のボタン(カレンダーを作るボタン) */
+.btn-start {
+  font-family: 'Sofia', cursive;
+  font-size: 1.2em;
+  color: #fff;
+  background: green;
+  box-shadow: 2px 2px 20px green;
+  border: 4px solid hsl(120, 100%, 25%);
+  border-radius: 16px;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+}
+ 
+/* ボタンの中のベルの色 */
+.fa-bell {
+color: orange;
+}
+  
+button:active,
+button:focus {
+  outline: none;
+}
+
+.btn-start:hover {
+  outline: none;
+  color: green;
+  background: rgb(153, 252, 153);
+  box-shadow: 2px 2px 20px green;
+  border: none;
+} 
+  
+
+/* snow effect */
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(farthest-corner at 30vw 20vh,#edfcea 1%, #b7eaf8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.snow1 {
+  background:url(img/snow.png);
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  animation: animate1 10s infinite linear;
+}
+
+.snow2 {
+  background:url(img/snow.png);
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  animation: animate2 15s infinite linear;
+}
+
+@keyframes animate1 {
+  0% {
+    background-position: 0px 0px
+  }
+  100% {
+    background-position: 100px 650px
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position: 0px -100px
+  }
+  100% {
+    background-position: 0px 650px
+  }
+}
+
+/* ドアとカレンダー（アドベントカレンダーのキー部分） */
+
+/* ドアとグリッドの枠が収まる場所 */
+.container {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  width: 500px;
+  height: 600px;
+  border: 5px solid black;
+  margin: 30px auto;
+  background-image: url("img/advent.jpg");
+  background-size: cover;
+  box-shadow: 6px 6px 20px gray;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+      "door9 door6 door11 door7"
+      "door3 door20 door16 door2"
+      "door14 door12 door19 door15"
+      "door22 door1 door5 door23"
+      "door17 door10 door24 door21"
+      "door8 door18 door4 door13";
+}
+
+/* 1つずつの画像のスタイル(画像自体はJSで設定) */
+.image {
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* 画像にホバーした時のスタイル */
+.image:hover {
+  border: 4px solid #fff;
+}
+
+/* 画像内のテキスト(日にち)のスタイル */
+.text {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid black;
+  transition: opacity 2.5s;
+}
+
+
+/*メディアクエリ */
+@media (max-width: 992px) {
+
+  /* .container {
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 600px;
+      border: 5px solid black;
+      margin: 30px auto;
+      box-shadow: 6px 6px 20px gray;;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  
+  .container {
+      width: 450px;
+      height: 550px;
+      border: 5px solid black;
+      margin: 30px auto;
+      box-shadow: 6px 6px 10px gray;;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  
+  /* .container {
+      width: 400px;
+      height: 500px;
+      border: 5px solid black;
+      margin: 30px auto;
+      box-shadow: 6px 6px 10px gray;;
+  } */
+}
+
+@media screen and (max-width: 480px) {
+  
+  .container {
+      width: 340px;
+      height: 440px;
+      border: ４px solid black;
+      margin: 0 auto;
+      box-shadow:3px 3px 10px gray;
+  }
+
+  .navbar {
+    height: 110px;
+  }
+
+  .btn-start {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;;
+  }
+
+
+ 
+
+
+}
+
+
+
+  
+   
+
+    
+    
+    
+    
+    
+    
+    
+    
+   
+
+
+
+ 

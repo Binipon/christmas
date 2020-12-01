@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background:#ff1616;
+  font-family: 'Mali', cursive;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar img {
+  width: 50px;
+}
+
+.navbar.bg-light {
+  /* background: radial-gradient(farthest-corner at 50vw 10vh,hsl(268, 80%, 84%) 1%, hsl(268, 100%, 25%) 100%); */
+  /* background: radial-gradient(farthest-corner at 20vw 5vh,#edfcea 10%, #b7eaf8 100%); */
+  background: #4f9c4a!important;
+}
+
+.navbar-brand {
+  color: #fff!important;
+  font-size:2em;
+  font-family: 'Sacramento', cursive;
+}
+
+a {
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+
+.navbar li {
+  margin-right: 20px;
+  
+}
+
+
+
+button:hover,
+button:focus {
+  outline: none;
+}
+
+.nav-link {
+  color: #fff!important;
+  font-size: 1.1em;
+  padding: 0!important;
+}
+
+a:hover,
+a:focus {
+  opacity: .5;
+}
+  
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.jumbotron {
+  padding: 0;
+  /* margin: 0; */
+}
+
+.padding {
+  padding: 2em;
+}
+
+
+
+/* countdown */
+
+.santa-container {
+  display: flex;
+  justify-content: center;
+ 
+}
+.countdown-bg {
+  
+  background:#4f9c4a;
+  width: 85%;
+  border-radius: 16px;
+  padding: 1.5em;
+}
+ 
+.santa {
+  width: 50%;
+}
+  
+.card {
+  border-radius: 8px;
+}
+
+.card img {
+  border-radius: 8px;
+}
+
+.btn-success {
+  background: #4f9c4a;
+}
+
+
+
+/* footer */
+footer {
+  background:#4f9c4a;
+}
+
+footer p {
+  font-size: 1em;
+  opacity: .9;
+  color: #fff;
+  padding: 2em;
+  margin: 0;
+}
+
+/* @media screen and (max-width: 544px) {
+  .countdown h2 {
+    font-size: 1em;
+  } */
+

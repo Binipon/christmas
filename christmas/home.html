@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- https://developers.google.com/speed/libraries のlibrariesから持ってきた -->
+  
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+  
+<body>
+<!-- navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
+  <div class="container-fluid">
+    
+    <p class="navbar-brand">Merry Christmas</p>
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="advent.html" class="nav-link">Advent Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a href="christmas-deco.html" class="nav-link">Xmas Deco</a>
+        </li>
+        <li class="nav-item">
+          <a href="food.html" class="nav-link">Xmas Food</a>
+        </li>
+        <li class="nav-item">
+          <a href="wishes.html" class="nav-link">Xmas Wishes</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        
+
+<!-- Header Image -->
+<div class=" jumbotron jumbotron-fluid">
+  <img src="img/header.jpg" class="img-fluid" >
+</div>
+
+<!-- countdown section -->
+<div class="santa-container padding">
+  <div id=" countdown" class="countdown-bg">
+    <h2>CHRISTMAS COUNTDOWN!</h2>
+    <div id="days"></div>
+    <div id="hours"></div>
+    <div id="minutes"></div>
+    <div id="seconds"></div>
+    <img src="img/santasan-removebg.png" class="img-fluid santa">
+  </div>
+</div> 
+ 
+<!-- Cards Section -->
+<div class="container-fluid padding">
+<div class="row padding">
+  <div class="col-md-6  mb-4">
+    <div class="card">
+      <a href="advent.html" class="advent-calendar" id="advent-calendar"><img src="img/advent-calendar.jpg"></a>
+      <div class="card-body">
+        <h4 class="card-title" >Advent Calendar</h4>
+        <!-- <p>アドベントカレンダーを楽しもう！</p> -->
+        <a href="advent.html" class="btn btn-success">Let's have a look!</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-6  mb-4">
+    <div class="card">
+      <a href="christmas-deco.html" class="xmas-deco" id="xmas-deco"><img src="img/xmas-deco.jpg"></a>
+      <div class="card-body">
+        <h4 class="card-title" >Christmas Decorations</h4>
+        <!-- <p>クリスマスワールドを覗いてみよう！</p> -->
+        <a href="christmas-deco.html" class="btn btn-success">Let's have a look!</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-6  mb-4">
+    <div class="card">
+      <a href="food" class="xmas-food" id="xmas-food"><img src="img/xmas-food-home.jpg"></a>
+      <div class="card-body">
+        <h4 class="card-title" >Christmas Food</h4>
+        <!-- <p>クリスマスフードを見よう！</p> -->
+        <a href="food.html" class="btn btn-success">Let's have a look!</a>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-md-6  mb-4">
+    <div class="card">
+      <a href="wishes.html" class="xmas-wish" id="xmas-wish"><img src="img/xmas-wishes.jpg"></a>
+      <div class="card-body">
+        <h4 class="card-title" >Christmas Wishes</h4>
+        <!-- <p>クリスマスのお願いごと</p> -->
+        <a href="wishes.html" class="btn btn-success">Let's have a look!</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  
+<footer>
+  <div class="container-fluid">
+    <!-- <div class="row text-center"> -->
+        <p class="text-center">&copy:christmas-is-fun.com</p>
+      <!-- </div> -->
+    </div>
+</footer>
+
+<script src="js/home.js"></script>
+</body>
+</html>
+
+
+
+  
+
+
+
+
+
+
+
+
+
